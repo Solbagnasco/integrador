@@ -1,0 +1,142 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;    
+}
+
+.no-sel{ 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}  
+
+.navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 4;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 6.5rem;
+}
+
+.lista-nav {
+    width: 70%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    color: blanchedalmond;
+    
+    /* padding: 20px; */
+}
+
+.lista-nav li {
+    margin-right: 3rem;
+    color: black;
+    font-size: 2rem;
+    font-family: 'Patrick Hand', cursive;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+    font-weight: bold;
+    letter-spacing: -2px;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.lista-nav li:hover {
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);   
+    font-size: 2.2rem; 
+}
+
+.login {
+    width: 10%;
+    color: black;
+    font-size: 2rem;
+    font-family: 'Patrick Hand', cursive;
+    display: flex;
+    justify-content: flex-end;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+    font-weight: bold;
+    letter-spacing: -2px;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.login:hover {
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);   
+    font-size: 2.2rem; 
+
+}
+
+.portada {
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+  /*   background-position-x: 60%;
+    background-position-y: 70%;
+    background-repeat: no-repeat; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   /*  justify-content: center; */
+}
+
+.portada h1 {
+    width: 30%;
+    background-color: transparent;
+    color: white;
+    font-family: 'Francois One', sans-serif;
+    text-shadow: -6px 3px 0px #000000;
+    font-size: 7rem;
+    -webkit-text-stroke: 2px black;
+    margin-left: 10%;
+    -webkit-transition: all 1s 0.1s ease-in-out;
+    -moz-transition: all 1s 0.1s ease-in-out;
+    -o-transition: all 1s 0.1s ease-in-out;
+    transition: all 1s 0.1s ease-in-out;
+}
+
+.portada h1:hover {
+    background-color: transparent;
+    color: black;
+    font-family: 'Francois One', sans-serif;
+    text-shadow: -6px 3px 0px #000000;
+    font-size: 7rem;
+    -webkit-text-stroke: 2px white;
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+
+.portada img {
+    width: 25%;
+    transition:all 2s ease-in-out;
+    
+}
+
+.portada img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+   
+    
+}
