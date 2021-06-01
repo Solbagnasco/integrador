@@ -244,7 +244,7 @@ a {
 .container-cards {
     width: 100%;
     display: flex;   
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     margin-top: 5%;
     margin-bottom: 10% ;
@@ -258,6 +258,7 @@ a {
     width: 100%;
     height: 40vh;
     object-fit: cover;
+    object-position: center;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     transition: all 0.5s 0.1s ease-in-out;
@@ -273,6 +274,7 @@ a {
 }
 
 .datos {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -297,5 +299,85 @@ a {
     text-align: center;
     /* text-transform: uppercase; */
 }
+
+/* MONITOR MEDIANO  */
+/* @media (min-width: 1500px) and (max-width: 1750px) {
+    .card-cat {
+        width: 15%;
+    }
+}  */
+
+/* MONITOR LAPTOP L */
+@media (min-width: 1201px) and (max-width: 1499px) {
+    .card-cat {
+        width: 23%;
+    }
+    .card-cat p {
+        font-size: 1.4rem;
+    }
+}
+
+/* MONITOR LAPTOP */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .card-cat {
+        width: 24%;
+    }
+
+    .card-cat p {
+        font-size: 1.3rem;
+    }
+}
+
+/* TABLET */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .card-cat {
+        width: 24%;
+    }
+
+    .card-cat p {
+        font-size: 1.3rem;
+    }
+}
+
+/* MOBILE L */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-cat {
+        width: 60%;
+        margin-top: 10%;
+    }
+    .card-cat img {
+        object-position: top;
+    }
+}
+
+/* MOBILE M */
+@media (min-width: 320px) and (max-width: 480px) {
+    .container-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-cat {
+        width: 80%;
+        margin-top: 10%;
+    }
+}
+
+/* MOBILE S */
+@media (min-width: 0px) and (max-width: 319px) {
+    .container-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-cat {
+        width: 90%;
+        margin-top: 10%;
+    }
+}
+
+
 
 
