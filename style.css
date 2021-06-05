@@ -2,9 +2,10 @@ html{
     scroll-behavior: smooth;
 }
 
-body {
+* {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 a {
@@ -34,8 +35,6 @@ a {
 
 .logo {
     width: 10%;
-    display: flex;
-    justify-content: flex-end;
 }
 
 .logo img {
@@ -57,7 +56,7 @@ a {
 }
 
 .lista-nav li {
-    margin-right: 3rem;
+    padding-right: 3rem;
     color: black;
     font-size: 2rem;
     font-family: 'Patrick Hand', cursive;
@@ -85,7 +84,7 @@ a {
 .account {
     width: 15%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     white-space: nowrap;
     align-items: center;
 }
@@ -97,7 +96,7 @@ a {
     color: black;
     font-size: 1.2rem;
     text-decoration: underline;
-    margin-right: 15%;
+    padding-left: 30px; 
     text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 }
 
@@ -144,7 +143,7 @@ a {
 }
 
 .portada h1 {
-    width: 40%;
+    width: 60%;
     background-color: transparent;
     color: black;
     text-shadow: 4px 4px 2px rgba(0,0,0,0.3);
@@ -154,8 +153,10 @@ a {
     font-family: 'Francois One', sans-serif;
     text-align: center;
     font-size: 4.7rem;
-    margin-left: 18%;
-    margin-top: 9%;
+    text-align: center;
+    padding-left: 200px;
+    padding-top: 150px;
+    margin: 0px;;
     z-index: 2;
     -webkit-transition: all 1s 0.1s ease-in-out;
     -moz-transition: all 1s 0.1s ease-in-out;
@@ -174,8 +175,7 @@ a {
 
 .astronauta {
     width: 20%;
-    margin-top: 5%;
-    margin-left: 3%;
+    padding-top: 5%;
     transition:all 2s ease-in-out;   
 }
 
@@ -187,11 +187,6 @@ a {
 .container-info {
     width: 100%;
     background-color: black;
-    /* background-image: url("./img/fondo-pedazo.png");
-    background-position-x: 11.5%;
-    background-position-y: 80%;
-    background-size: 500px;
-    background-repeat: no-repeat; */
     background-image: url("./img/Panthers_b.png");
     background-size: 1500px;
     background-position-x: 50%;
@@ -200,17 +195,17 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .container-info h2 {
-    text-align: center;
+    width: 80%;
     background-color: transparent;
     color: white;
     font-family: 'Francois One', sans-serif;
     text-align: center;
     font-size: 3.5rem;
-    margin-top: 5%;
+    padding-top: 5%;
     margin-bottom: 0px;
     padding-left: 30%;
 }
@@ -227,23 +222,14 @@ a {
     padding-left: 30%;
 }
 
-/* .container-info img {
-    width: 10%;
-    position: absolute;
-    margin: 0px;
-    transform: rotate(180deg);
-    margin-bottom: 280px;
-    margin-left: 1500px;
-} */
-
 .card-info {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    margin-bottom: 4%;
+    padding-bottom: 4%;
     padding-right: 13%;
-    margin-top: 2%;
+    padding-top: 2%;
 }
 
 .info1 {
@@ -265,7 +251,7 @@ a {
     text-align: center;
 } */
 
-.kittens {
+.michis {
     text-align: center;
     background-color: transparent;
     color: black;
@@ -274,7 +260,7 @@ a {
     /* text-shadow: -6px 3px 0px #000000; */
     font-size: 4rem;
     /* -webkit-text-stroke: 1px white; */
-    margin-top: 7%;
+    padding-top: 7%;
 }
 
 .container-cards {
@@ -337,13 +323,15 @@ a {
 }
 
 .container-carousel {
+    width: 100%;
+    height: 90vh;
     background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 3%;
-    padding-bottom: 4%;
+   /*  padding-top: 3%;
+    padding-bottom: 4%; */
 }
 
 .container-carousel h2 {
@@ -352,21 +340,23 @@ a {
     font-family: 'Francois One', sans-serif;
     text-align: center;
     font-size: 4rem;
-    margin-top: 2%;
-    margin-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    margin: 0px;
 }
 .tamaño-carousel {
     width: 55%;
 }
 
 .titulo-form {
+    width: 100%;
     text-align: center;
     background-color: transparent;
     color: black;
     font-family: 'Francois One', sans-serif;
     text-align: center;
     font-size: 4rem;
-    margin-top: 15%;
+    padding-top: 15%;
     /* margin-bottom: 3%; */
 }
 .container-form {
@@ -390,19 +380,20 @@ a {
 }
 
 .redes {
-    margin-left: 5%;
+    padding-left: 5%;
 }
 .redes p {
     color: white;
     font-family: 'Londrina Solid', cursive;
     font-size: 2rem;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 .container-icons i {
     color: white;
     font-size: 2.5em;
-    margin: 0px 10px;
+    padding: 0px 10px;
 }
 
 .icon-mail:hover{
@@ -434,7 +425,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 5%;
+    padding-right: 5%;
 }
 
 .logo-footer p {
