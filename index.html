@@ -12,44 +12,46 @@
 </head>
 <body>
     <header id="home">
-        <nav class="navbar no-sel">
-            <div class="logo"><a href="#home"><img src="./img/logo-corte.png" alt=""></a></div>
-            <div class="lista-nav">
-                <ul class="lista">
-                    <li><a href="#info">REFUGIO</a></li>
-                    <li><a href="#kittens">MICHIS</a></li>
-                    <li><a href="#gallery">GALERIA</a></li>
-                    <li><a href="#form">ADOPTA/DONA</a> <img src="./img/corazon-rojo1.png" alt="corazon"></li>
-                </ul>
-            </div>
-            <div class="account">
+      <nav class="navbar no-sel">
+        <div class="logo">
+          <a href="#home"><img src="./img/logo-corte.png" alt=""></a>
+        </div>
+        <div class="lista-nav">
+          <ul class="lista">
+            <li><a href="#info">REFUGIO</a></li>
+            <li><a href="#kittens">MICHIS</a></li>
+            <li><a href="#gallery">GALERIA</a></li>
+            <li><a href="#form">ADOPTA/DONA</a> <img src="./img/corazon-rojo1.png" alt="corazon"></li>
+          </ul>
+        </div>
+        <div class="account">
             <a class="singup" href="">Registro</a>
-           <button class="login">LOG IN</button>
-            </div>
-        </nav>
-        <div class="portada no-sel">
-            <h1>EXPLORA ESTOS GATITOS Y ADOPTA UNO</h1>
-            <img class="astronauta" src="./img/gato-astronauta2.jpg" alt="astronauta">
-        </div>       
+            <button class="login">LOG IN</button>
+        </div>
+      </nav>
+      <div class="portada no-sel">
+          <h1>EXPLORA ESTOS GATITOS Y ADOPTA UNO</h1>
+          <img class="astronauta" src="./img/gato-astronauta2.jpg" alt="astronauta">
+      </div>       
     </header>
     <main>
-    <section id="info">
+      <section id="info">
         <div class="container-info no-sel">
-            <h2>-RESCUE ME!-</h2>
-            <h3>Un refugio para gatitos de otra galaxia</h3>
-        <div class="card-info">
+          <h2>-RESCUE ME!-</h2>
+          <h3>Un refugio para gatitos de otra galaxia</h3>
+          <div class="card-info">
               <div class="info1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nisi sit accusamus ducimus facere commodi rerum harum voluptate rem iusto cumque, id recusandae perferendis quaerat ex amet fuga laboriosam nostrum et at aliquid magnam modi quod! Veritatis ipsam saepe vel! Cum reiciendis quo ipsam odio nemo vel, saepe sed. Consequuntur.</p>
-            </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nisi sit accusamus ducimus facere commodi rerum harum voluptate rem iusto cumque, id recusandae perferendis quaerat ex amet fuga laboriosam nostrum et at aliquid magnam modi quod! Veritatis ipsam saepe vel! Cum reiciendis quo ipsam odio nemo vel, saepe sed. Consequuntur.</p>
+              </div>
             <!-- <div class="info2">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic at dicta nam architecto quae, porro, explicabo in pariatur praesentium iusto qui cumque. Tempore, quas dolor aperiam autem beatae vitae odio?</p>
             </div> -->
+          </div>
         </div>
-        </div>
-    </section>
-    <section id="kittens">
+      </section>
+      <section id="kittens">
         <h2 class="michis">-MICHIS EN ÓRBITA-</h2>
-        <div class="container-cards">
+        <div class="container-cards no-sel">
             <div class="card-cat">
                 <img src="./img/arys.jpeg" alt="Arys">
                 <div class="datos">
@@ -75,15 +77,15 @@
                 <img src="./img/mefi.jpeg" alt="Mefi">
                 <div class="datos">
                     <h3>MEFISTO</h3>
-                    <P>-Muerdo todo lo que encuentro, soy mimoso, chiquito y quilombero.-</P>
+                    <P>-Muerdo todo lo que encuentro, soy mimoso, chiquito y bardero.-</P>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="container-carousel" id="gallery">
+      </section>
+      <section class="container-carousel" id="gallery">
         <h2>-GALERÍA CÓSMICA-</h2>
         <div class="tamaño-carousel">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./img/car1.jpeg" class="d-block w-100" alt="...">
@@ -138,13 +140,61 @@
             </button>
           </div>
         </div>
-    </section>
-    <section id="form">
-        <h2 class="titulo-form">-ACA VAN LOS FORMULARIOS-</h2>
+     </section>
+     <section id="form">
+        <!-- <h2 class="titulo-form">-TITULO FORMULARIOS-</h2> -->
         <div class="container-form">
+          <div class="form no-sel"> 
+            <h3>-Quiero adoptar-</h3>
+            <p>Si querés que uno de nuestros michis forme parte de tu mundo, dejanos tus datos para comenzar el proceso de adopción.</p>
+            <form>
+              <label class="form-datos">Nombre</label>
+              <input class="form-input" type="text" maxlength="20">
+              <label class="form-datos">E-mail</label>
+              <input class="form-input" type="email" maxlength="35">
+              <div class="check-masc">
+                <label class="form-datos">¿Tenés mascotas?</label>
+                <div>
+                  <input type="radio" name="pet">
+                  <label class="form-datos si-no">Si</label>
+                  <input type="radio" name="pet">
+                  <label class="form-datos si-no">No</label>
+                </div>
+                <label class="form-datos">¿Por qué te gustaría adoptar un gatito?</label>
+              <textarea class="form-input" name="" id="" cols="35" rows="2" required></textarea>
+              <button class="form-datos">Enviar</button>
+            </div>
+            </form>
+          </div>
+          <div class="form no-sel">
+            <h3>-Quiero donar-</h3>
+            <p>Todas las donaciones hacen una diferencia, no importa lo pequeñas que sean ayudan a que nuestro universo de gatitos esté bien alimentado y felíz.</p>
+            <form class=" form2">
+              <label class="form-datos">Nombre</label>
+              <input class="form-input" type="text" maxlength="20">
+              <label class="form-datos">E-mail</label>
+              <input class="form-input" type="email" maxlength="30">
+              <div class="check-masc">
+                <label class="form-datos">¿Cuánto querés donar?</label>
+                <div>
+                  <input type="radio" name="tip">
+                  <label class="form-datos">$100</label>
+                  <input type="radio" name="tip">
+                  <label class="form-datos">$200</label>
+                  <input type="radio" name="tip">
+                  <label class="form-datos">$500</label>
+                </div>
+                <div> 
+                  <input type="radio" name="tip">
+                  <label class="form-datos otro-monto">Otro monto</label>
+                  <input class="input-tip otro-monto" type="number" min="10" max="1000">
+                </div>
+                <button class="form-datos btt-donar">Donar</button>
+              </div>
+            </form>            
+          </div>
         </div>
-    </section>
-    
+     </section>
     </main>
     <footer>
         <div class="footer no-sel">

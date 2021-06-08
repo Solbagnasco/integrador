@@ -95,36 +95,35 @@ a {
     font-weight: bold;
     color: black;
     font-size: 1.2rem;
-    text-decoration: underline;
     padding-left: 30px; 
     text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 }
 
 .login {
     width: 40%;
-    color: black;
     font-size: 1.8rem;
     font-family: 'Patrick Hand', cursive;
     text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
     font-weight: bold;
     letter-spacing: -2px;
+    border-radius: 5%;
     border: 3px solid black;
-    border-radius: 10px;
-    box-shadow: 10px 10px 13px -11px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 13px -11px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 13px -11px rgba(0,0,0,0.75);
-   /*  -webkit-transition: all 0.5s linear;
-    -moz-transition: all 0.5s linear;
-    -o-transition: all 0.5s linear;
-    transition: all 0.5s linear; */
+    padding: 0px 16px;
+    box-shadow: 6px 5px 10px -2px rgba(0,0,0,0.50);
+    -webkit-box-shadow: 6px 5px 10px -2px rgba(0,0,0,0.50);
+    -moz-box-shadow: 6px 5px 10px -2px rgba(0,0,0,0.50);
+    transition: all 0.1s ease-in-out;
 }
 
-.login:hover {
-    cursor: pointer;
+.singup:hover {
+    text-decoration: underline; 
 }
 
 .login:active {
-    transform: translateY(4px);
+    transform: translateY(3px);
+    box-shadow: 6px 5px 13px -2px rgba(0,0,0,0.38);
+    -webkit-box-shadow: 6px 5px 13px -2px rgba(0,0,0,0.38);
+    -moz-box-shadow: 6px 5px 13px -2px rgba(0,0,0,0.38);
 }
 
 .portada {
@@ -314,7 +313,7 @@ a {
 
 .card-cat p {
     margin: 0%;
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Londrina Solid', cursive;
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 1px;
@@ -344,29 +343,137 @@ a {
     padding-bottom: 3%;
     margin: 0px;
 }
+
 .tamaño-carousel {
     width: 55%;
 }
 
-.titulo-form {
-    width: 100%;
-    text-align: center;
-    background-color: transparent;
-    color: black;
-    font-family: 'Francois One', sans-serif;
-    text-align: center;
-    font-size: 4rem;
-    padding-top: 15%;
-    /* margin-bottom: 3%; */
+.carousel-inner {
+    border-radius: 10px;
 }
+
 .container-form {
     width: 100%;
-    height: 30vh;
     background-color: white;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
+}
+
+.form {
+    width: 26%;
+    margin: 5% 0%;
+   /*  border: 3px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form h3 {
+    font-family: 'Francois One', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form p {
+    font-family: 'Londrina Solid', cursive;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin: 0px;
+    padding: 10px;
+}
+
+.form-datos {
+    font-family: 'Londrina Solid', cursive;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    font-weight: bolder;   
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+}
+
+.form-input {
+    width: 70%;
+    border: solid rgba(170, 170, 170, 0.377); 
+    border-width: 0 0 2px 0;
+    outline: none;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 1.3rem;
+}
+.form-input::-moz-selection, .otro-monto::-moz-selection { 
+    color: white;
+    background: black; 
+}
+.form-input::selection, .otro-monto::selection { 
+    color: white;
+    background: black; 
+}
+
+.check-masc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.si-no {
+    font-size: 1.3rem;
+}
+  
+.form textarea {
+    resize: none;
+}
+
+.otro-monto {
+    font-size: 1.3rem;
+}
+
+.input-tip {
+    width: 20%;   
+    border: solid rgba(170, 170, 170, 0.377); 
+    border-width: 0 0 2px 0;
+    outline: none;
+    font-family: 'Londrina Solid', cursive; 
+    font-weight: bolder; 
+    font-size: 1.3rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.form button {
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 5%;
+    border: 3px solid black;
+    padding: 0px 16px;
+    box-shadow: 6px 5px 13px -2px rgba(0,0,0,0.57);
+    -webkit-box-shadow: 6px 5px 13px -2px rgba(0,0,0,0.57);
+    -moz-box-shadow: 6px 5px 13px -2px rgba(0,0,0,0.57);
+    transition: all 0.1s ease-in-out;
+}
+
+.btt-donar {
+    margin-top: 110px !important;
+}
+
+.form button:active {
+    transform: translateY(3px);
+    box-shadow: 6px 5px 13px -2px rgba(0,0,0,0.38);
+    -webkit-box-shadow: 6px 5px 13px -2px rgba(0,0,0,0.38);
+    -moz-box-shadow: 6px 5px 13px -2px rgba(0,0,0,0.38);
 }
 
 .footer {
