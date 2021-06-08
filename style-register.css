@@ -51,7 +51,8 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-size: clamp(1.5rem, 2.5vw, 4rem); 
-    padding-top: 70px;
+    padding-top: 60px;
+    margin: 0px;
 }
 
 .container-icons {
@@ -90,12 +91,11 @@ body {
     font-weight: bolder;
     text-align: center;
     font-size: clamp(1rem, 1.3vw, 4rem); 
-
 }
 
 .container-input {
     width: 50%;
-    height: 35%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -103,7 +103,7 @@ body {
 }
 
 .container-input input {
-    height: 40px;
+    height: 50px;
     color: black;
     background: #dbdbdb3f;
     border: 2px solid rgba(34, 34, 34, 0.918);
@@ -126,21 +126,58 @@ body {
     background: black; 
 }
 
+.card-register button {
+    background-color: white;
+    border-radius: 5%;
+    border: 3px solid black;
+    padding: 10px 16px;
+    font-family: 'Londrina Solid', cursive;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    font-weight: bolder;   
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 6px 5px 13px -2px rgba(0,0,0,0.57);
+    -webkit-box-shadow: 6px 5px 13px -2px rgba(0,0,0,0.57);
+    -moz-box-shadow: 6px 5px 13px -2px rgba(0,0,0,0.57);
+    transition: all 0.1s ease-in-out;
+}
 
+.card-register button:active {
+    transform: translateY(3px);
+    box-shadow: 6px 5px 13px -2px rgba(0,0,0,0.38);
+    -webkit-box-shadow: 6px 5px 13px -2px rgba(0,0,0,0.38);
+    -moz-box-shadow: 6px 5px 13px -2px rgba(0,0,0,0.38);
+}
+
+.card-register h4 {
+    font-family: 'Londrina Solid', cursive;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    text-align: center;
+    font-size: clamp(0.5rem, 0.9vw, 2rem); 
+    padding-top: 40px;
+}
+
+.log-in {
+    text-decoration: underline;
+}
 
 .card-img {
     width: 50%; 
     background-color: black;
+    background-image: url("./img/img-register.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
     box-shadow: -11px 0px 15px -10px rgba(0,0,0,0.43);
     -webkit-box-shadow: -11px 0px 15px -10px rgba(0,0,0,0.43);
     -moz-box-shadow: -11px 0px 15px -10px rgba(0,0,0,0.43);
 }
 
-
-
 .card-img img {
-    width: 90%;
+    width: 30%;
+    padding: 10px 10px;
 }
