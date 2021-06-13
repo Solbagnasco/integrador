@@ -94,7 +94,7 @@ a {
     font-weight: bold;
     color: black;
     font-size: 1.3rem;
-    padding-left: 40px; 
+    padding-left: 30px; 
     text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 }
 
@@ -104,7 +104,7 @@ a {
     font-family: 'Patrick Hand', cursive;
     text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
     font-weight: bold;
-    letter-spacing: -2px;
+    /* letter-spacing: 1px; */
     border-radius: 5%;
     border: 3px solid black;
     padding: 5px 16px;
@@ -202,7 +202,7 @@ a {
     color: white;
     font-family: 'Francois One', sans-serif;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: clamp(2.5rem, 3.5vw, 4rem); 
     padding-top: 5%;
     margin-bottom: 0px;
     padding-left: 30%;
@@ -212,7 +212,7 @@ a {
     width: 70%;
     color: white;
     font-family: 'Patrick Hand', cursive;
-    font-size: 1.9rem;
+    font-size: clamp(0.9rem, 1.9vw, 2rem); 
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
@@ -234,7 +234,7 @@ a {
     width: 50%;
     color: white;
     font-family: 'Patrick Hand', cursive;
-    font-size: 1.5rem;
+    font-size: clamp(0.9rem, 1.4vw, 2rem); 
     letter-spacing: 3px;
     text-align: right;
 }
@@ -251,7 +251,7 @@ a {
 
 .fondo-nave {
     background-image: url("./img/nave-chiquita.png");
-    background-position-x: 68%;
+    background-position-x: 75%;
     background-position-y: 6%; 
     background-repeat: no-repeat;
 }
@@ -263,7 +263,7 @@ a {
     font-family: 'Francois One', sans-serif;
     text-align: center;
     /* text-shadow: -6px 3px 0px #000000; */
-    font-size: 4rem;
+    font-size: clamp(2.8rem, 3.5vw, 4rem); 
     /* -webkit-text-stroke: 1px white; */
     padding-top: 7%;
 }
@@ -312,7 +312,7 @@ a {
     color: black;
     font-family: 'Londrina Solid', cursive;
     text-align: center;
-    font-size: 3rem;
+    font-size: clamp(2rem, 3vw, 4rem); 
     font-weight: bold;
     margin: 0%;   
 } 
@@ -320,7 +320,7 @@ a {
 .card-cat p {
     margin: 0%;
     font-family: 'Londrina Solid', cursive;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2.3vw, 2rem); 
     font-weight: bold;
     letter-spacing: 1px;
     text-align: center;
@@ -331,6 +331,11 @@ a {
     width: 100%;
     height: 90vh;
     background-color: black;
+    background-image: url("./img/fondo-galeria.png");
+    background-size: 90%;
+    background-position-x: 50%;
+    background-position-y: 70%;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -344,14 +349,13 @@ a {
     color: white;
     font-family: 'Francois One', sans-serif;
     text-align: center;
-    font-size: 4rem;
-    padding-top: 2%;
+    font-size: clamp(2.9rem, 3.9vw, 4.5rem); 
     padding-bottom: 3%;
     margin: 0px;
 }
 
 .tamaño-carousel {
-    width: 55%;
+    width: 50%;
 }
 
 .carousel-inner {
@@ -482,8 +486,14 @@ input[type=number] {
     transition: all 0.1s ease-in-out;
 }
 
+.check-masc img {
+    width: 15%;
+    padding-top: 5px;
+    transform:rotate(-18deg);
+}
+
 .btt-donar {
-    margin-top: 63px !important;
+   margin-top: 18px !important;
 }
 
 .form button:active {
@@ -561,35 +571,94 @@ input[type=number] {
 
 
 /* MONITOR MEDIANO  */
-/* @media (min-width: 1500px) and (max-width: 1750px) {
-    .card-cat {
-        width: 15%;
+@media (min-width: 1500px) and (max-width: 1750px) {
+   /*  .navbar {
+        width: 90%;
+    } */
+
+    .container-info {
+        background-size: 100%;
     }
-}  */
+    .container-carousel {
+        background-size: 75%;
+        height: 100%;
+        padding-top: 1%;
+    }
+    .tamaño-carousel {
+        width: 45%;
+        padding-bottom: 1%;
+    }
+    
+} 
 
 /* MONITOR LAPTOP L */
 @media (min-width: 1201px) and (max-width: 1499px) {
+    
+    .container-info {
+        background-size: 100%;
+    }
     .card-cat {
         width: 23%;
     }
     .card-cat p {
         font-size: 1.4rem;
     }
+    .fondo-nave {
+        background-position-x: 80%;
+    }
+    .card-cat img:hover {
+        border-radius: 65%;
+    }
+    .container-carousel {
+        background-size: 85%;
+        height: 100%;
+        padding-top: 1%;
+    }
+    .tamaño-carousel {
+        width: 50%;
+        padding-bottom: 1%;
+    }
 }
 
 /* MONITOR LAPTOP */
 @media (min-width: 1025px) and (max-width: 1200px) {
+    
+    .container-info {
+        background-size: 100%; 
+    }
     .card-cat {
         width: 24%;
     }
 
     .card-cat p {
         font-size: 1.3rem;
+    }
+    .fondo-nave {
+        background-position-x: 90%;
+    }
+    .card-cat img:hover {
+        border-radius: 60%;
+    }
+    .container-carousel {
+        background-size: 100%;
+        height: 100%;
+    }
+    .container-carousel {
+        background-size: 85%;
+        height: 100%;
+        padding-top: 1%;
+    }
+    .tamaño-carousel {
+        width: 50%;
+        padding-bottom: 1%;
     }
 }
 
 /* TABLET */
 @media (min-width: 769px) and (max-width: 1024px) {
+    .container-info {
+        background-size: 100%; 
+    }
     .card-cat {
         width: 24%;
     }
@@ -597,13 +666,39 @@ input[type=number] {
     .card-cat p {
         font-size: 1.3rem;
     }
+    .fondo-nave {
+        background-position-x: 100%;
+        background-position-y: 1%;
+    }
+    .card-cat img:hover {
+        border-radius: 55%;
+    }
+    .container-carousel {
+        background-size: 100%;
+        height: 100%;
+    }
+    .container-carousel {
+        background-size: 100%;
+        height: 100%;
+        padding-top: 1%;
+    }
+    .tamaño-carousel {
+        width: 60%;
+        padding-bottom: 1%;
+    }
 }
 
 /* MOBILE L */
 @media (min-width: 481px) and (max-width: 768px) {
+    .container-info {
+        background-image: url("./img/info-mob.png");
+        background-size: 50%;
+        background-position: 0%;
+    }
     .container-cards {
         flex-direction: column;
         align-items: center;
+        margin: 0px;
     }
     .card-cat {
         width: 60%;
@@ -612,10 +707,31 @@ input[type=number] {
     .card-cat img {
         object-position: top;
     }
+    .fondo-nave {
+        background-image: none;
+    }
+    .container-carousel {
+        background-size: 100%;
+        height: 100%;
+    }
+    .container-carousel {
+        background-size: 110%;
+        height: 100%;
+        padding-top: 1%;
+    }
+    .tamaño-carousel {
+        width: 70%;
+        padding-bottom: 1%;
+    }
 }
 
 /* MOBILE M */
 @media (min-width: 320px) and (max-width: 480px) {
+    .container-info {
+        background-image: url("./img/info-mob.png");
+        background-size: 70%;
+        background-position: 0%;
+    }
     .container-cards {
         flex-direction: column;
         align-items: center;
@@ -624,10 +740,29 @@ input[type=number] {
         width: 80%;
         margin-top: 10%;
     }
+    .fondo-nave {
+        background-image: none;
+    }
+    .container-carousel {
+        background-size: 100%;
+        height: 100%;
+    }
+    .container-carousel {
+        background-size: 110%;
+        height: 100%;
+        padding-top: 1%;
+    }
+    .tamaño-carousel {
+        width: 100%;
+        padding-bottom: 1%;
+    }
 }
 
 /* MOBILE S */
 @media (min-width: 0px) and (max-width: 319px) {
+    .container-info {
+        background-image: none;
+    }
     .container-cards {
         flex-direction: column;
         align-items: center;
@@ -636,6 +771,23 @@ input[type=number] {
         width: 90%;
         margin-top: 10%;
     }
+    .fondo-nave {
+        background-image: none;
+    }
+    .container-carousel {
+        background-size: 100%;
+        height: 100%;
+    }
+    .container-carousel {
+        background-size: 110%;
+        height: 100%;
+        padding-top: 1%;
+    }
+    .tamaño-carousel {
+        width: 100%;
+        padding-bottom: 1%;
+    }
+
 }
 
 
