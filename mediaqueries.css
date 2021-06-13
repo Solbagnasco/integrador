@@ -190,6 +190,12 @@
     .account {
         width: 10%;
     }
+    .login{
+        padding: 3px 16px;
+    }
+    .login-btt {
+        border: 2px solid black;   
+    }
     .container-info {
          background-image: url("./img/info-mob.png");
          background-size: 50%;
