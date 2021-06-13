@@ -28,8 +28,7 @@ a {
     align-items: center;
     justify-content: space-around;
     z-index: 4;
-    box-sizing: border-box;   
-    
+    box-sizing: border-box;       
 }
 
 .logo {
@@ -57,7 +56,7 @@ a {
 .lista-nav li {
     padding-right: 3rem;
     color: black;
-    font-size: clamp(1.5rem, 2vw, 2rem); 
+    font-size: clamp(1rem, 2vw, 2rem); 
     font-family: 'Patrick Hand', cursive;
     text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
     font-weight: bold;
@@ -83,22 +82,27 @@ a {
 .account {
     width: 15%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     white-space: nowrap;
     align-items: center;
 }
 
 .singup {
-    width: 20%;
     font-family: 'Patrick Hand', cursive;
     font-weight: bold;
     color: black;
-    font-size: clamp(0.8rem, 2vw, 1.3rem); 
-    padding-left: 30px; 
+    font-size: clamp(0.8rem, 1.8vw, 1.3rem); 
+    /* padding-right: 10px; */
     text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 }
+
+.singup-btt {
+    border: none;
+    background: none;
+}
+
 .login {
-    font-size: clamp(1.5rem, 2vw, 1.8rem); 
+    font-size: clamp(1rem, 2vw, 1.8rem); 
     font-family: 'Patrick Hand', cursive;
     text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
     font-weight: bold;
@@ -106,8 +110,9 @@ a {
     padding: 5px 16px;
 }
 
-.account button {
+.login-btt {
     border-radius: 5%;
+    margin-left: 10%;
     border: 3px solid black;    
     box-shadow: 6px 5px 10px -2px rgba(0,0,0,0.50);
     -webkit-box-shadow: 6px 5px 10px -2px rgba(0,0,0,0.50);
@@ -151,7 +156,7 @@ a {
     -webkit-text-stroke: 1px black; ORIGINAL */ 
     font-family: 'Francois One', sans-serif;
     text-align: center;
-    font-size: 4.7rem;
+    font-size: clamp(2.5rem, 4vw, 4.7rem); 
     text-align: center;
     padding-left: 200px;
     padding-top: 150px;

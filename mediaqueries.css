@@ -1,9 +1,6 @@
 /* MONITOR MEDIANO  */
 @media (min-width: 1500px) and (max-width: 1750px) {
-    /*  .navbar {
-         width: 90%;
-     } */
- 
+    
      .container-info {
          background-size: 100%;
      }
@@ -26,8 +23,10 @@
  
  /* MONITOR LAPTOP L */
  @media (min-width: 1201px) and (max-width: 1499px) {
-    
-     .container-info {
+    .logo {
+        width: 13%;
+    }
+    .container-info {
          background-size: 100%;
      }
      .card-cat {
@@ -67,7 +66,9 @@
  
  /* MONITOR LAPTOP */
  @media (min-width: 1025px) and (max-width: 1200px) {
-     
+    .logo {
+        width: 13%;
+    }
      .container-info {
          background-size: 100%; 
      }
@@ -113,6 +114,12 @@
  
  /* TABLET */
  @media (min-width: 769px) and (max-width: 1024px) {
+    .logo {
+        width: 15%;
+    }
+    .account {
+        width: 10%;
+    }
      .container-info {
          background-size: 100%; 
      }
