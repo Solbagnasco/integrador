@@ -115,7 +115,13 @@
  /* TABLET */
  @media (min-width: 769px) and (max-width: 1024px) {
     .logo {
-        width: 15%;
+        width: 13%;
+    }
+    .lista-nav li {
+        padding-right: 2.5rem;
+    }
+    .lista-nav img {
+        width: 1rem;
     }
     .account {
         width: 10%;
@@ -166,7 +172,25 @@
  
  /* MOBILE L */
  @media (min-width: 481px) and (max-width: 768px) {
-     .container-info {
+    .navbar {
+        flex-direction: column;
+         align-items: center;
+         margin: 0px;
+    }
+    .logo {
+        width: 20%;
+    }
+    .lista-nav li {
+        padding-right: 1rem;
+    }
+    .lista-nav img {
+        width: 0.8rem;
+        padding-bottom: 5px;
+    }
+    .account {
+        width: 10%;
+    }
+    .container-info {
          background-image: url("./img/info-mob.png");
          background-size: 50%;
          background-position: 0%;
@@ -218,6 +242,24 @@
  
  /* MOBILE M */
  @media (min-width: 320px) and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+         align-items: center;
+         margin: 0px;
+    }
+    .logo {
+        width: 25%;
+    }
+    .lista-nav li {
+        padding-right: 1rem;
+    }
+    .lista-nav img {
+        width: 0.8rem;
+        padding-bottom: 5px;
+    }
+    .account {
+        width: 10%;
+    }
      .container-info {
          background-image: none;
      }
@@ -279,6 +321,24 @@
  
  /* MOBILE S */
  @media (min-width: 0px) and (max-width: 319px) {
+    .navbar {
+        flex-direction: column;
+         align-items: center;
+         margin: 0px;
+    }
+    .logo {
+        width: 25%;
+    }
+    .lista-nav li {
+        padding-right: 1rem;
+    }
+    .lista-nav img {
+        width: 0.8rem;
+        padding-bottom: 5px;
+    }
+    .account {
+        width: 10%;
+    }
      .container-info {
          background-image: none;
      }
