@@ -276,12 +276,12 @@
          background-image: none;
      }
      .container-info h2, .container-info h3 {
-         width: 100%;
-         padding-left: 10%;
+         width: 80%;
+         margin: 0px;
+         padding-left: 0px;
      }
      .info1 {
-         width: 70%;
-         
+         width: 80%;
          text-align: center;
      }
      .container-cards {
@@ -360,6 +360,14 @@
      .container-info {
          background-image: none;
      }
+    .container-info h2, .container-info h3 {
+        width: 100%;
+        padding-left: 5%;
+    }
+     .info1 {
+        width: 80%;
+        text-align: center;
+    }
      .container-cards {
          flex-direction: column;
          align-items: center;
