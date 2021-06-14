@@ -244,6 +244,12 @@
     .logo-footer img {
         width: 70%;
     }
+    .redes p {
+        margin: 0px;
+    }
+    .container-icons i {
+        padding: 0px 5px;
+    }
  }
  
  /* MOBILE M */
@@ -323,6 +329,9 @@
     .logo-footer img {
         width: 50%;
     }
+    .redes p {
+        margin: 0px;
+    }
  }
  
  /* MOBILE S */
@@ -379,6 +388,9 @@
      }
      .form {
          width: 70%;
+     }
+     .redes p {
+         margin: 0px;
      }
      .nave-black {
         opacity: 0;
