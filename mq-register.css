@@ -1,0 +1,35 @@
+/* MONITOR MEDIANO  */
+@media (min-width: 1500px) and (max-width: 1750px) {
+    
+} 
+
+/* MONITOR LAPTOP L */
+@media (min-width: 1201px) and (max-width: 1499px) {
+  
+}
+
+/* MONITOR LAPTOP */
+@media (min-width: 1025px) and (max-width: 1200px) {
+   
+}
+
+/* TABLET */
+@media (min-width: 769px) and (max-width: 1024px) {
+   
+}
+
+/* MOBILE L */
+@media (min-width: 481px) and (max-width: 768px) {
+  
+}
+
+/* MOBILE M */
+@media (min-width: 320px) and (max-width: 480px) {
+   
+}
+
+/* MOBILE S */
+@media (min-width: 0px) and (max-width: 319px) {
+   
+}
+
