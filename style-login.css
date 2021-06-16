@@ -127,7 +127,7 @@ form {
     letter-spacing: 1px;
     font-weight: bolder;
     text-align: center;
-    font-size: clamp(0.9rem, 1.1vw, 2rem); 
+    font-size: clamp(1rem, 1.1vw, 2rem); 
 }
 
 /* .container-input::placeholder {
@@ -177,7 +177,7 @@ form {
     letter-spacing: 1px;
     font-weight: lighter;
     text-align: center;
-    font-size: clamp(0.7rem, 0.9vw, 2rem); 
+    font-size: clamp(0.8rem, 0.9vw, 2rem); 
     padding: 5% 0%;
 }
 
@@ -187,7 +187,7 @@ form {
     letter-spacing: 1px;
     font-weight: lighter;
     text-align: center;
-    font-size: clamp(0.7rem, 1vw, 2rem); 
+    font-size: clamp(0.9rem, 1vw, 2rem); 
     padding: 3%;
 
 }

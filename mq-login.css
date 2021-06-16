@@ -1,34 +1,120 @@
 /* MONITOR MEDIANO  */
 @media (min-width: 1500px) and (max-width: 1750px) {
-    
+    .container-reg {
+        width: 45%;
+    }
 } 
 
 /* MONITOR LAPTOP L */
 @media (min-width: 1201px) and (max-width: 1499px) {
-  
+    .container-reg {
+        width: 47%;
+    }
+    .container-icons {
+        width: 55%;
+    }
+    .card-img img {
+        width: 43%;
+    }
 }
 
 /* MONITOR LAPTOP */
 @media (min-width: 1025px) and (max-width: 1200px) {
-   
+    .container-reg {
+        width: 47%;
+    }
+    .container-icons {
+        width: 60%;
+    }
+    .card-img img {
+        width: 43%;
+    }
 }
 
 /* TABLET */
 @media (min-width: 769px) and (max-width: 1024px) {
-   
+    .container-reg {
+        width: 53%;
+    }
+    .card-register h1 {
+        font-size: clamp(1.8rem, 2.5vw, 4rem); 
+    }
+    .container-icons {
+        width: 70%;
+    }
+    form {
+        width: 80%;
+    }
+    .card-img {
+        background-size: 80%;
+    }
+    .card-img img {
+        width: 43%;
+    }
 }
 
 /* MOBILE L */
 @media (min-width: 481px) and (max-width: 768px) {
-  
+    .container-reg {
+        width: 70%;
+    }
+    .card-register {
+        width: 100%;
+    }
+    .card-register h1 {
+        font-size: clamp(1.8rem, 2.5vw, 4rem); 
+    }
+    .container-icons {
+        width: 70%;
+    }
+    form {
+        width: 60%;
+    }
+    .card-img {
+        width: 0%; 
+    }
 }
 
 /* MOBILE M */
 @media (min-width: 320px) and (max-width: 480px) {
-   
+    .container-reg {
+        width: 85%;
+    }
+    .card-register {
+        width: 100%;
+    }
+    .card-register h1 {
+        font-size: clamp(1.8rem, 2.5vw, 4rem); 
+    }
+    .container-icons {
+        width: 70%;
+    }
+    form {
+        width: 80%;
+    }
+    .card-img {
+        width: 0%; 
+    }
 }
 
 /* MOBILE S */
 @media (min-width: 0px) and (max-width: 319px) {
-   
+    .container-reg {
+        width: 85%;
+    }
+    .card-register {
+        width: 100%;
+    }
+    .card-register h1 {
+        font-size: clamp(1.8rem, 2.5vw, 4rem); 
+    }
+    .container-icons {
+        width: 70%;
+    }
+    form {
+        width: 80%;
+    }
+    .card-img {
+        width: 0%; 
+    }
 }
