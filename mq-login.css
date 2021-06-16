@@ -56,10 +56,11 @@
 /* MOBILE L */
 @media (min-width: 481px) and (max-width: 768px) {
     .container-reg {
-        width: 70%;
+        width: 60%;
     }
     .card-register {
         width: 100%;
+        padding-top: 8%;
     }
     .card-register h1 {
         font-size: clamp(1.8rem, 2.5vw, 4rem); 
@@ -70,6 +71,9 @@
     form {
         width: 60%;
     }
+    .card-register h5 {
+        padding-bottom: 6%;
+    }
     .card-img {
         width: 0%; 
     }
@@ -79,18 +83,23 @@
 @media (min-width: 320px) and (max-width: 480px) {
     .container-reg {
         width: 85%;
+        
     }
     .card-register {
         width: 100%;
     }
     .card-register h1 {
         font-size: clamp(1.8rem, 2.5vw, 4rem); 
+        padding-top: 15%;
     }
     .container-icons {
         width: 70%;
     }
     form {
         width: 80%;
+    }
+    .card-register h5 {
+        padding-bottom: 6%;
     }
     .card-img {
         width: 0%; 
@@ -104,6 +113,7 @@
     }
     .card-register {
         width: 100%;
+        padding-top: 15%;
     }
     .card-register h1 {
         font-size: clamp(1.8rem, 2.5vw, 4rem); 
@@ -113,6 +123,9 @@
     }
     form {
         width: 80%;
+    }
+    .card-register h5 {
+        padding-bottom: 6%;
     }
     .card-img {
         width: 0%; 
