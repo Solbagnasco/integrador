@@ -1,35 +1,123 @@
 /* MONITOR MEDIANO  */
-@media (min-width: 1500px) and (max-width: 1750px) {
-    
+@media (min-width: 1540px) and (max-width: 1750px) {
+    .card-img {
+        background-size: 99%;
+    }
 } 
 
 /* MONITOR LAPTOP L */
-@media (min-width: 1201px) and (max-width: 1499px) {
-  
+@media (min-width: 1201px) and (max-width: 1539px) {
+    .container-reg {
+        width: 65%;
+    }
+    .container-icons {
+        width: 60%; 
+    }
+    form {
+        width: 55%;
+    }
+    .card-img {
+        background-size: 99%;
+    }
 }
 
 /* MONITOR LAPTOP */
 @media (min-width: 1025px) and (max-width: 1200px) {
-   
+    .container-reg {
+        width: 65%;
+    }
+    .container-icons {
+        width: 60%; 
+    }
+    form {
+        width: 60%;
+    }
+    .card-img {
+        background-size: 110%;
+    }
 }
 
 /* TABLET */
 @media (min-width: 769px) and (max-width: 1024px) {
-   
+    .container-reg {
+        width: 65%;
+    } 
+    .container-icons {
+        width: 60%; 
+    }
+    form {
+        width: 70%;
+    }
+    .container-input input {
+        height: 40px;
+    }
+    .card-img {
+        background-size: 120%;
+    }
 }
 
 /* MOBILE L */
 @media (min-width: 481px) and (max-width: 768px) {
-  
+    .container-reg {
+        width: 70%;
+    } 
+    .card-register {
+        width: 100%;
+    }
+    .card-register h1 {
+        font-size: clamp(2rem, 3.5vw, 5rem); 
+    }
+    .container-icons {
+        width: 60%; 
+    }
+    form {
+        width: 50%;
+    }
+    .card-img {
+        width: 0%; 
+    }
 }
 
 /* MOBILE M */
 @media (min-width: 320px) and (max-width: 480px) {
-   
+    .container-reg {
+        width: 85%;
+    } 
+    .card-register {
+        width: 100%;
+    }
+    .card-register h1 {
+        font-size: clamp(2rem, 3.5vw, 5rem); 
+    }
+    .container-icons {
+        width: 70%; 
+    }
+    form {
+        width: 60%;
+    }
+    .card-img {
+        width: 0%; 
+    }
 }
 
 /* MOBILE S */
 @media (min-width: 0px) and (max-width: 319px) {
-   
+    .container-reg {
+        width: 90%;
+    } 
+    .card-register {
+        width: 100%;
+    }
+    .card-register h1 {
+        font-size: clamp(2rem, 3.5vw, 5rem); 
+    }
+    .container-icons {
+        width: 60%; 
+    }
+    form {
+        width: 60%;
+    }
+    .card-img {
+        width: 0%; 
+    }
 }
-

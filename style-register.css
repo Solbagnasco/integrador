@@ -18,16 +18,17 @@ a {
 
 
 body {
-   background-color: #ebedf0;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-top: 100px;  
-   
+    height: 100%;
+    background-color: #ebedf0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-reg {
     width: 60%;
+    /* height: 100%;  */
     background-color: white;
     display: flex;
     box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.69);
@@ -37,6 +38,7 @@ body {
 
 .card-register {
     width: 50%;  
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,22 +50,22 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-size: clamp(1.5rem, 2.5vw, 4rem); 
-    padding-top: 60px;
+    padding-top: 10%;
     margin: 0px;
 }
 
 .container-icons {
-    width: 45%;
+    width: 50%;
     text-align: center;
     /* border:  2px solid black;
     border-radius: 10px; */
-    margin: 30px 0px;   
+    margin: 5% 0%;   
 }
 
 .container-icons i {
     color: black;
-    font-size: 2.3em;
-    padding: 10px 15px;  
+    font-size: clamp(1.7rem, 2.5vw, 2.3rem);
+    padding: 10px 10px;  
     box-sizing: border-box;
 }
 
@@ -87,15 +89,21 @@ body {
     letter-spacing: 1px;
     font-weight: bolder;
     text-align: center;
-    font-size: clamp(1rem, 1.3vw, 4rem); 
+    font-size: clamp(1.1rem, 1.3vw, 4rem); 
 }
-
-.container-input {
+form {
     width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+   
+}
+.container-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    margin: 30px 0px;
+    margin: 5% 0%;
 }
 
 .container-input input {
@@ -104,14 +112,14 @@ body {
     background: #dbdbdb3f;
     border: 2px solid rgba(34, 34, 34, 0.918);
     border-radius: 10px;
-    margin: 5px 0px;
+    margin: 2% 0%;
     padding: 5px 5px;
     outline: none;
     font-family: 'Londrina Solid', cursive;
     letter-spacing: 1px;
     font-weight: bolder;
     text-align: center;
-    font-size: clamp(0.7rem, 0.9vw, 2rem); 
+    font-size: clamp(0.9rem, 1.1vw, 2rem); 
 }
 
 .container-input::-moz-selection { 
@@ -128,9 +136,10 @@ body {
     border-radius: 5%;
     border: 3px solid black;
     padding: 10px 16px;
+    padding: 3% 5%;
     font-family: 'Londrina Solid', cursive;
     letter-spacing: 1px;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 1.3vw, 4rem); 
     font-weight: bolder;   
     text-align: center;
     text-transform: uppercase;
@@ -152,7 +161,7 @@ body {
     letter-spacing: 1px;
     font-weight: lighter;
     text-align: center;
-    font-size: clamp(0.5rem, 0.9vw, 2rem); 
+    font-size: clamp(0.7rem, 1vw, 2rem); 
     padding-top: 40px;
     padding-bottom: 20px;
 }
